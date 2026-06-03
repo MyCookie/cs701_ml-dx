@@ -41,7 +41,24 @@ A high-scoring student is one who can take a vague domain intuition ("the data f
 
 ---
 
-## 4. Final Grade Calculation
+## 4. Rubric: Case Study Analysis (Post-Mortems)
+
+### Core Evaluation Criteria
+
+| Criteria | Poor (Fail/C) | Satisfactory (B) | Exceptional (A) |
+| :--- | :--- | :--- | :--- |
+| **Diagnostic Rigor** | Fails to identify the core failure (e.g., confuses shortcut with noise). | Correctly identifies the failure but cannot explain the technical mechanism. | Precisely identifies the root cause (Shortcut vs. Bias) with a detailed technical explanation. |
+| **Architectural Translation** | Proposes vague fixes (e.g., "get more data"). | Proposes relevant tools (e.g., "use a saliency map") but lacks a specific implementation plan. | Translates the failure into actionable technical requirements (e.g., "Perform Stratified Performance Analysis across 5 skin-tone tiers"). |
+| **Prevention Strategy** | Suggests "better luck next time" or generic solutions. | Proposes a reasonable audit step but misses the "Gold Standard" validation. | Designs a comprehensive prevention pipeline (e.g., Ablation $\rightarrow$ Saliency Audit $\rightarrow$ Clinical Ground-Truth Validation). |
+| **Critical Analysis** | Simply summarizes the case study without adding insight. | Analyzes the case but fails to connect it to the broader "Garbage In, Garbage Out" principle. | Synthesizes the case study into a generalizable rule for future domain-specific ML projects. |
+
+### "Red Flags" for Grading
+- **The "Architectural Fallacy":** The student suggests that changing the model architecture (e.g., "use a larger LLM") would have prevented a data-driven failure. (Penalty: Severe).
+- **The "Superficial Fix":** The student suggests a fix that doesn't address the underlying bias/shortcut (e.g., "just remove the wrong images"). (Penalty: Moderate).
+
+---
+
+## 5. Final Grade Calculation
 
 **Module 1 Total Grade = (Audit Report Score $\times$ 0.5) + (Taxonomy Strategy Score $\times$ 0.5)**
 
