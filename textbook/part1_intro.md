@@ -1,0 +1,7 @@
+# Part I: The Interface (The Role of the Expert)
+
+When I first started working with machine learning models, I viewed them as "black boxes" that could somehow intuit the complexities of a specialized field if given enough data. I quickly learned that this is a fundamental misconception. In specialized domains—whether it's medicine, law, or high-end engineering—data alone is insufficient. Generalist models often fail not because they lack compute, but because they lack the domain-specific nuance that only a subject matter expert (SME) can provide.
+
+In this first part of the guide, we will redefine the role of the domain expert. You are not simply a provider of labels or a curator of datasets; you are a strategic architectural asset. The goal is to move you from a position of "intuitive feedback"—where you can tell a model's output feels wrong—to a position of "technical specification," where you can explain *why* it is wrong in terms the ML engineer can use to iterate on the architecture.
+
+We will begin by exploring the symbiosis between domain expertise and model design, identifying the specific gaps where generalist AI fails. Then, we will map out the modern ML landscape, providing you with a high-level taxonomy of AI and an overview of the technical stack. By the end of this section, you will have the vocabulary and the framework necessary to stop being a passenger in the ML process and start acting as the navigator.
