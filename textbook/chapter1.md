@@ -26,17 +26,17 @@ When a generalist model fails in a specialized field, it doesn't usually fail by
 
 ```mermaid
 graph TD
-    A[Generalist Model] --> B{Knowledge Base}
+    A[Generalist Model] --> B[Knowledge Base]
     B --> C[General Knowledge: High Accuracy]
     B --> D[Domain Knowledge: Low Density/Generic]
     
-    E[Domain Expert] --> F{Knowledge Base}
+    E[Domain Expert] --> F[Knowledge Base]
     F --> G[General Knowledge: Variable]
     F --> H[Domain Knowledge: High Density/Nuanced]
     
-    C --- I[The "Blind Spot"]
-    D --- I
-    H --- I
+    C --> I[The Blind Spot]
+    D --> I
+    H --> I
     
     style I fill:#f96,stroke:#333,stroke-width:2px
 ```
