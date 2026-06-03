@@ -32,11 +32,11 @@ Think of it as the difference between a judge and an artist. The judge decides i
 graph LR
     subgraph Discriminative
         D_In[Input: Image of a Bridge] --> D_Proc[Analyze Features]
-        D_Proc --> D_Out[Output: "Safe" or "Unsafe"]
+        D_Proc --> D_Out[Output: Safe or Unsafe]
     end
 
     subgraph Generative
-        G_In[Input: "Design a Bridge"] --> G_Proc[Predict Next Token/Pixel]
+        G_In[Input: Design a Bridge] --> G_Proc[Predict Next Token/Pixel]
         G_Proc --> G_Out[Output: New Blueprint/Image]
     end
 ```
